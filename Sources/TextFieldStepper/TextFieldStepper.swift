@@ -20,7 +20,8 @@ public struct TextFieldStepper: View {
     
     private var cancelButton: some View {
         Button(action: {
-            textValue = formatTextValue(doubleValue)
+            //Comment out as this breaks using text field
+            // textValue = formatTextValue(doubleValue)
             cancelled = true
             keyboardOpened = false
         }) {
